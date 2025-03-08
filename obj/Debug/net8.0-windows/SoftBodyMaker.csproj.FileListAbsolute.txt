@@ -1,0 +1,33 @@
+C:\Users\prome\Documents\TOP SECRET\SoftBodyMaker\bin\Debug\net8.0-windows\SoftBodyMaker.exe
+C:\Users\prome\Documents\TOP SECRET\SoftBodyMaker\bin\Debug\net8.0-windows\SoftBodyMaker.deps.json
+C:\Users\prome\Documents\TOP SECRET\SoftBodyMaker\bin\Debug\net8.0-windows\SoftBodyMaker.runtimeconfig.json
+C:\Users\prome\Documents\TOP SECRET\SoftBodyMaker\bin\Debug\net8.0-windows\SoftBodyMaker.dll
+C:\Users\prome\Documents\TOP SECRET\SoftBodyMaker\bin\Debug\net8.0-windows\SoftBodyMaker.pdb
+C:\Users\prome\Documents\TOP SECRET\SoftBodyMaker\obj\Debug\net8.0-windows\SoftBodyMaker.csproj.GenerateResource.cache
+C:\Users\prome\Documents\TOP SECRET\SoftBodyMaker\obj\Debug\net8.0-windows\SoftBodyMaker.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\prome\Documents\TOP SECRET\SoftBodyMaker\obj\Debug\net8.0-windows\SoftBodyMaker.AssemblyInfoInputs.cache
+C:\Users\prome\Documents\TOP SECRET\SoftBodyMaker\obj\Debug\net8.0-windows\SoftBodyMaker.AssemblyInfo.cs
+C:\Users\prome\Documents\TOP SECRET\SoftBodyMaker\obj\Debug\net8.0-windows\SoftBodyMaker.csproj.CoreCompileInputs.cache
+C:\Users\prome\Documents\TOP SECRET\SoftBodyMaker\obj\Debug\net8.0-windows\SoftBodyMaker.dll
+C:\Users\prome\Documents\TOP SECRET\SoftBodyMaker\obj\Debug\net8.0-windows\refint\SoftBodyMaker.dll
+C:\Users\prome\Documents\TOP SECRET\SoftBodyMaker\obj\Debug\net8.0-windows\SoftBodyMaker.pdb
+C:\Users\prome\Documents\TOP SECRET\SoftBodyMaker\obj\Debug\net8.0-windows\SoftBodyMaker.genruntimeconfig.cache
+C:\Users\prome\Documents\TOP SECRET\SoftBodyMaker\obj\Debug\net8.0-windows\ref\SoftBodyMaker.dll
+C:\Users\prome\Documents\TOP SECRET\SoftBodyMaker\obj\Debug\net8.0-windows\CustomSoftBodyMaker.SoftBodyForm.resources
+C:\Users\prome\Documents\projecto\NesEmu\SoftBodyMaker\obj\Debug\net8.0-windows\CustomSoftBodyMaker.SoftBodyForm.resources
+C:\Users\prome\Documents\projecto\NesEmu\SoftBodyMaker\obj\Debug\net8.0-windows\SoftBodyMaker.csproj.GenerateResource.cache
+C:\Users\prome\Documents\projecto\NesEmu\SoftBodyMaker\obj\Debug\net8.0-windows\SoftBodyMaker.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\prome\Documents\projecto\NesEmu\SoftBodyMaker\obj\Debug\net8.0-windows\SoftBodyMaker.AssemblyInfoInputs.cache
+C:\Users\prome\Documents\projecto\NesEmu\SoftBodyMaker\obj\Debug\net8.0-windows\SoftBodyMaker.AssemblyInfo.cs
+C:\Users\prome\Documents\projecto\NesEmu\SoftBodyMaker\obj\Debug\net8.0-windows\SoftBodyMaker.csproj.CoreCompileInputs.cache
+C:\Users\prome\Documents\projecto\NesEmu\SoftBodyMaker\obj\Debug\net8.0-windows\SoftBodyMaker.sourcelink.json
+C:\Users\prome\Documents\projecto\NesEmu\SoftBodyMaker\obj\Debug\net8.0-windows\SoftBodyMaker.dll
+C:\Users\prome\Documents\projecto\NesEmu\SoftBodyMaker\obj\Debug\net8.0-windows\refint\SoftBodyMaker.dll
+C:\Users\prome\Documents\projecto\NesEmu\SoftBodyMaker\obj\Debug\net8.0-windows\SoftBodyMaker.pdb
+C:\Users\prome\Documents\projecto\NesEmu\SoftBodyMaker\bin\Debug\net8.0-windows\SoftBodyMaker.exe
+C:\Users\prome\Documents\projecto\NesEmu\SoftBodyMaker\bin\Debug\net8.0-windows\SoftBodyMaker.deps.json
+C:\Users\prome\Documents\projecto\NesEmu\SoftBodyMaker\bin\Debug\net8.0-windows\SoftBodyMaker.runtimeconfig.json
+C:\Users\prome\Documents\projecto\NesEmu\SoftBodyMaker\bin\Debug\net8.0-windows\SoftBodyMaker.dll
+C:\Users\prome\Documents\projecto\NesEmu\SoftBodyMaker\bin\Debug\net8.0-windows\SoftBodyMaker.pdb
+C:\Users\prome\Documents\projecto\NesEmu\SoftBodyMaker\obj\Debug\net8.0-windows\SoftBodyMaker.genruntimeconfig.cache
+C:\Users\prome\Documents\projecto\NesEmu\SoftBodyMaker\obj\Debug\net8.0-windows\ref\SoftBodyMaker.dll
