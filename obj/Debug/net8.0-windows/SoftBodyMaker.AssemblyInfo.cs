@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SoftBodyMaker")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9168c4a0ca36aa03279c71e331bdd669a3bd29da")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("SoftBodyMaker")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SoftBodyMaker")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

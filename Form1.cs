@@ -99,6 +99,12 @@ namespace CustomSoftBodyMaker
         private void SoftBodyForm_Paint(object sender, PaintEventArgs e) // Draw shapes and bodies
         {
             Graphics g = e.Graphics;
+
+            // Draw the floor
+            int floorHeight = 340;
+            int floorY = this.ClientSize.Height - floorHeight;
+            g.FillRectangle(Brushes.Black, 0, floorY, this.ClientSize.Width, floorHeight);
+
             if (!simulationMode)
             {
                 foreach (var shape in drawnShapes)
@@ -185,6 +191,7 @@ namespace CustomSoftBodyMaker
     {
         public List<MassPoint> Points { get; private set; } = new List<MassPoint>(); // Points and Springs
         public List<Spring> Springs { get; private set; } = new List<Spring>();
+        private List<Vector2> originalPositions = new List<Vector2>(); // Store original positions
 
         public static SoftBody CreateFromPolygon(List<PointF> polygon)
         {
@@ -194,7 +201,12 @@ namespace CustomSoftBodyMaker
 
             // Create mass points for the original polygon
             foreach (var pt in polygon)
-                body.Points.Add(new MassPoint(new Vector2(pt.X, pt.Y)));
+            {
+                var massPoint = new MassPoint(new Vector2(pt.X, pt.Y));
+                massPoint.PreviousPosition = massPoint.Position; // Initialize PreviousPosition
+                body.Points.Add(massPoint);
+                body.originalPositions.Add(massPoint.Position); // Store original position
+            }
 
             // Create springs for the original polygon edges
             for (int i = 0; i < n; i++)
@@ -210,8 +222,10 @@ namespace CustomSoftBodyMaker
                 int next = (i + 1) % n;
                 Vector2 midPoint = (body.Points[i].Position + body.Points[next].Position) / 2;
                 MassPoint midMassPoint = new MassPoint(midPoint);
+                midMassPoint.PreviousPosition = midMassPoint.Position; // Initialize PreviousPosition
                 newPoints.Add(midMassPoint);
                 body.Points.Add(midMassPoint);
+                body.originalPositions.Add(midMassPoint.Position); // Store original position
 
                 // Create springs between original points and new midpoints
                 body.Springs.Add(new Spring(body.Points[i], midMassPoint));
@@ -231,7 +245,9 @@ namespace CustomSoftBodyMaker
             centroid /= n;
 
             MassPoint centerPoint = new MassPoint(centroid);
+            centerPoint.PreviousPosition = centerPoint.Position; // Initialize PreviousPosition
             body.Points.Add(centerPoint);
+            body.originalPositions.Add(centerPoint.Position); // Store original position
 
             foreach (var point in body.Points)
                 body.Springs.Add(new Spring(point, centerPoint));
@@ -244,7 +260,7 @@ namespace CustomSoftBodyMaker
             // Reset forces and apply gravity
             foreach (var p in Points)
                 p.Force = Vector2.Zero;
-            Vector2 gravity = new Vector2(0, 980f);
+            Vector2 gravity = new Vector2(0, 5000f); // Adjust this value to change gravity
             foreach (var p in Points)
                 if (!p.IsPinned)
                     p.Force += gravity * p.Mass;
@@ -260,9 +276,26 @@ namespace CustomSoftBodyMaker
 
             // Enforce constraints multiple times for stability:
             // this will keep each spring from stretching or compressing too much.
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < 10; i++) // More iterations for accuracy
             {
                 EnforceConstraints();
+            }
+
+            // Enforce original shape constraints
+            EnforceOriginalShapeConstraints();
+        }
+
+        private void EnforceOriginalShapeConstraints()
+        {
+            for (int i = 0; i < Points.Count; i++)
+            {
+                var point = Points[i];
+                if (!point.IsPinned)
+                {
+                    Vector2 originalPosition = originalPositions[i];
+                    Vector2 delta = originalPosition - point.Position;
+                    point.Position += delta * 0.02f; // Adjust this factor to change shape retention strength
+                }
             }
         }
 
@@ -337,6 +370,7 @@ namespace CustomSoftBodyMaker
     public class MassPoint
     {
         public Vector2 Position;
+        public Vector2 PreviousPosition; // Add this field
         public Vector2 Velocity;
         public Vector2 Force;
         public float Mass;
@@ -345,6 +379,7 @@ namespace CustomSoftBodyMaker
         public MassPoint(Vector2 pos, float mass = 1f)
         {
             Position = pos;
+            PreviousPosition = pos; // Initialize PreviousPosition
             Mass = mass;
             Velocity = Vector2.Zero;
             Force = Vector2.Zero;
@@ -353,21 +388,26 @@ namespace CustomSoftBodyMaker
 
         public void Update(float dt)
         {
+            if (IsPinned) return;
+
             Vector2 acceleration = Force / Mass;
-            Velocity += acceleration * dt;
+            Vector2 newPosition = Position + (Position - PreviousPosition) + acceleration * dt * dt;
 
-            float maxVelocity = 500f;
-            if (Velocity.Length() > maxVelocity)
-                Velocity = Vector2.Normalize(Velocity) * maxVelocity;
-
-            // Apply damping to simulate friction/air resistance
-            Velocity *= 0.98f;
-            Position += Velocity * dt;
+            PreviousPosition = Position;
+            Position = newPosition;
 
             // Clamp within the screen bounds
             float minX = 0, maxX = 800, minY = 0, maxY = 600;
             Position.X = Math.Clamp(Position.X, minX, maxX);
             Position.Y = Math.Clamp(Position.Y, minY, maxY);
+
+            // Collision response with the floor
+            float floorY = maxY; // Assuming the floor is at the bottom of the screen
+            if (Position.Y > floorY)
+            {
+                Position.Y = floorY;
+                PreviousPosition.Y = floorY; // Prevent further movement downwards
+            }
         }
     }
 
@@ -379,7 +419,7 @@ namespace CustomSoftBodyMaker
         public float Stiffness;
         public float Damping;
 
-        public Spring(MassPoint a, MassPoint b, float stiffness = 10f, float damping = 10f)
+        public Spring(MassPoint a, MassPoint b, float stiffness = 10f, float damping = 10f) // Adjust these values
         {
             A = a;
             B = b;
@@ -398,15 +438,14 @@ namespace CustomSoftBodyMaker
             float displacement = currentLength - RestLength;
             Vector2 springForce = -Stiffness * displacement * direction;
 
-            float maxForce = 10000f; // Limit the maximum force
-            if (springForce.Length() > maxForce)
-                springForce = Vector2.Normalize(springForce) * maxForce;
+            // Apply damping more effectively
+            Vector2 relativeVelocity = B.Velocity - A.Velocity;
+            Vector2 dampingForce = -Damping * Vector2.Dot(relativeVelocity, direction) * direction;
 
-            Vector2 dampingForce = -Damping * Vector2.Dot(B.Velocity - A.Velocity, direction) * direction;
             Vector2 totalForce = springForce + dampingForce;
 
-            if (!A.IsPinned) A.Force += totalForce;
-            if (!B.IsPinned) B.Force -= totalForce;
+            if (!A.IsPinned) A.Force += totalForce * 0.5f;
+            if (!B.IsPinned) B.Force -= totalForce * 0.5f;
         }
     }
 }

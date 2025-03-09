@@ -1,17 +1,29 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\prome\\Documents\\projecto\\NesEmu\\SoftBodyMaker\\",
+  "WorkspaceRootPath": "C:\\Users\\prome\\Documents\\TOP SECRET\\SoftBodyMaker\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1F390CCA-C8D5-4CF2-ACDA-DC587FCBBBE9}|SoftBodyMaker.csproj|c:\\users\\prome\\documents\\projecto\\nesemu\\softbodymaker\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1F390CCA-C8D5-4CF2-ACDA-DC587FCBBBE9}|SoftBodyMaker.csproj|c:\\users\\prome\\documents\\top secret\\softbodymaker\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1F390CCA-C8D5-4CF2-ACDA-DC587FCBBBE9}|SoftBodyMaker.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1F390CCA-C8D5-4CF2-ACDA-DC587FCBBBE9}|SoftBodyMaker.csproj|C:\\Users\\prome\\Documents\\projecto\\NesEmu\\SoftBodyMaker\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{1F390CCA-C8D5-4CF2-ACDA-DC587FCBBBE9}|SoftBodyMaker.csproj|c:\\users\\prome\\documents\\top secret\\softbodymaker\\softbodymaker.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{1F390CCA-C8D5-4CF2-ACDA-DC587FCBBBE9}|SoftBodyMaker.csproj|solutionrelative:softbodymaker.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F390CCA-C8D5-4CF2-ACDA-DC587FCBBBE9}|SoftBodyMaker.csproj|c:\\users\\prome\\documents\\top secret\\softbodymaker\\softbodymaker.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1F390CCA-C8D5-4CF2-ACDA-DC587FCBBBE9}|SoftBodyMaker.csproj|solutionrelative:softbodymaker.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F390CCA-C8D5-4CF2-ACDA-DC587FCBBBE9}|SoftBodyMaker.csproj|c:\\users\\prome\\documents\\top secret\\softbodymaker\\top secret.lnk||{25834150-CD7E-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{1F390CCA-C8D5-4CF2-ACDA-DC587FCBBBE9}|SoftBodyMaker.csproj|solutionrelative:top secret.lnk||{25834150-CD7E-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F390CCA-C8D5-4CF2-ACDA-DC587FCBBBE9}|SoftBodyMaker.csproj|C:\\Users\\prome\\Documents\\TOP SECRET\\SoftBodyMaker\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{1F390CCA-C8D5-4CF2-ACDA-DC587FCBBBE9}|SoftBodyMaker.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1F390CCA-C8D5-4CF2-ACDA-DC587FCBBBE9}|SoftBodyMaker.csproj|c:\\users\\prome\\documents\\projecto\\nesemu\\softbodymaker\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1F390CCA-C8D5-4CF2-ACDA-DC587FCBBBE9}|SoftBodyMaker.csproj|c:\\users\\prome\\documents\\top secret\\softbodymaker\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1F390CCA-C8D5-4CF2-ACDA-DC587FCBBBE9}|SoftBodyMaker.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -22,43 +34,85 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SoftBodyMaker",
+              "DocumentMoniker": "C:\\Users\\prome\\Documents\\TOP SECRET\\SoftBodyMaker\\SoftBodyMaker.csproj",
+              "RelativeDocumentMoniker": "SoftBodyMaker.csproj",
+              "ToolTip": "C:\\Users\\prome\\Documents\\TOP SECRET\\SoftBodyMaker\\SoftBodyMaker.csproj",
+              "RelativeToolTip": "SoftBodyMaker.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-08T22:51:37.78Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\prome\\Documents\\projecto\\NesEmu\\SoftBodyMaker\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\prome\\Documents\\TOP SECRET\\SoftBodyMaker\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\prome\\Documents\\projecto\\NesEmu\\SoftBodyMaker\\Form1.cs",
+              "ToolTip": "C:\\Users\\prome\\Documents\\TOP SECRET\\SoftBodyMaker\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAAJ0AAAAAAAAAAAASwLoAAABPAAAAAAAAAA==",
+              "ViewState": "AgIAAPoAAAAAAAAAAAAqwAYBAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-08T21:37:36.2Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Form1.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\prome\\Documents\\projecto\\NesEmu\\SoftBodyMaker\\Form1.Designer.cs",
-              "RelativeDocumentMoniker": "Form1.Designer.cs",
-              "ToolTip": "C:\\Users\\prome\\Documents\\projecto\\NesEmu\\SoftBodyMaker\\Form1.Designer.cs",
-              "RelativeToolTip": "Form1.Designer.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAwwAIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-08T21:37:32.933Z"
+              "DocumentIndex": 3,
+              "Title": "TOP SECRET.lnk",
+              "DocumentMoniker": "C:\\Users\\prome\\Documents\\TOP SECRET\\SoftBodyMaker\\TOP SECRET.lnk",
+              "RelativeDocumentMoniker": "TOP SECRET.lnk",
+              "ToolTip": "C:\\Users\\prome\\Documents\\TOP SECRET\\SoftBodyMaker\\TOP SECRET.lnk",
+              "RelativeToolTip": "TOP SECRET.lnk",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002690|",
+              "WhenOpened": "2025-03-08T22:52:58.393Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\prome\\Documents\\projecto\\NesEmu\\SoftBodyMaker\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\prome\\Documents\\TOP SECRET\\SoftBodyMaker\\Form1.cs [Design]*",
-              "RelativeToolTip": "..\\..\\..\\TOP SECRET\\SoftBodyMaker\\Form1.cs [Design]*",
+              "Title": "SoftBodyMaker",
+              "DocumentMoniker": "C:\\Users\\prome\\Documents\\TOP SECRET\\SoftBodyMaker\\SoftBodyMaker.csproj",
+              "RelativeDocumentMoniker": "SoftBodyMaker.csproj",
+              "ToolTip": "C:\\Users\\prome\\Documents\\TOP SECRET\\SoftBodyMaker\\SoftBodyMaker.csproj",
+              "RelativeToolTip": "SoftBodyMaker.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-08T22:40:16.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\prome\\Documents\\TOP SECRET\\SoftBodyMaker\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\prome\\Documents\\TOP SECRET\\SoftBodyMaker\\Form1.Designer.cs",
+              "RelativeToolTip": "Form1.Designer.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAwwAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-08T21:37:06.713Z"
+              "WhenOpened": "2025-03-08T21:37:32.933Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\prome\\Documents\\TOP SECRET\\SoftBodyMaker\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\prome\\Documents\\TOP SECRET\\SoftBodyMaker\\Form1.cs [Design]",
+              "RelativeToolTip": "Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T21:37:06.713Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }
